@@ -10,7 +10,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Quasec",
-  description: "A IoT, OSINT, and internet vulnerability search engine.",
+  description:
+    "Your ultimate search engine for all things cybersecurity. From exposed devices and services to vulnerabilities and data breaches, we bring itall into the light.",
 };
 
 export default function RootLayout({
@@ -19,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
       <ThemeProvider attribute="class" disableTransitionOnChange>
         <body
           className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden`}

@@ -2,20 +2,20 @@ import Hero from "./_components/hero";
 
 export default function Home() {
   return (
-    <main className="h-full w-full">
-      <div className="flex flex-col gap-20">
+    <section className="h-screen w-full">
+      <div className="flex flex-col">
         <div className="relative flex flex-col h-full w-full">
           <video
             autoPlay
             muted
             loop
-            className="rotate-180 absolute top-[-320px] left-0 z-[1] w-full h-full object-cover"
+            className="rotate-180 absolute top-[-360px] left-0 z-[1] w-full h-full object-cover"
           >
             <source src="/blackhole.webm" type="video/webm" />
           </video>
           <Hero />
         </div>
       </div>
-    </main>
+    </section>
   );
 }
